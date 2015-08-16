@@ -1,0 +1,92 @@
+<div class="firstView" ng-controller = "watchVideo as clickVideo" > 
+      <figure class="logo" ng-controller = "logo as dellLogo" ng-click="dellLogo.goToUrl('/home')"> </figure>
+      
+      <cite>Every brand has a story.</cite>
+      <h2 id = "h2Heading"> <a ng-click = "clickVideo.videoAvailable()">Watch the video </a></h2>
+      <aside> &#x2192; </aside>
+
+      <div id = "positionVideo" ng-click = "clickVideo.closeVideo()" ng-show = "clickVideo.property.displayVideo">
+        <load-video></load-video>
+    </div>
+
+      <summary ng-controller = "buttonViewCtrl as buttonNav">
+        <button type="button" ng-hide = "buttonNav.member.buttonDisplay" ng-show = "!clickVideo.property.displayVideo" class="btn btn-default btn-lg navButton" aria-label="Center Align"  ng-click="buttonNav.nav()">
+          <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
+        </button>
+
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close" id = "closeButton" ng-show = "buttonNav.member.buttonDisplay" ng-hide = "!clickVideo.property.displayVideo" ng-click = "buttonNav.closeNav(); clickVideo.closeVideo()"><span aria-hidden="true">&times;</span> </button>
+
+        <div ng-show = "buttonNav.member.buttonDisplay" id = "buttonDisplayContent" class = "cssFade">
+          <navigate></navigate>
+        </div>
+    </summary>
+
+    <main>
+      <div id = "arrow"  ng-controller="ScrollCtrl as slowScroll">
+        <img src = "images/pointer.png" alt = "arrow" ng-click="slowScroll.gotoElement('panda')">
+      </div>
+    </div>
+
+    <div class = "panda" id = "panda">
+      <button type="button" class="btn btn-default btn-lg work"> SEE OUR WORK </button>
+    </div>
+    <main>
+
+    <div class = "experience">
+      <h1> Our team builds great brands and experiences. </h1>
+      <button type="button" class="btn btn-default btn-lg team"> MEET THE TEAM </button>
+    </div>
+
+    <section class = "about">
+      <h5> WHAT ARE WE? </h5>
+      <h2> Anchour is a branding agency based in Maine. </h3>
+
+      <p> We weave together creative solutions to build personal brands and experiences. We work closely with your brand to understand your needs and create solutions that produce real results. By integrating the power of identity, digital, and sensory design, we bring new life to brands everywhere.
+      </p>
+    </section>
+
+    <div class = "goodWork">
+      <div class = "spotlight"> 
+        <h3> <a href = "#"> Spotlight: Amanda Brill of Las Vegas </a> </h3>
+        <p> Amanda Brill is a Designer at Anchour. Fueled by the purpose of helping others, she works to bring the identity of a brand to life through a creative and intensive design process. to help brands effectively communicate who they she works to bring the identity of a brand to life through a creative... </p>
+        <footer> <a href = "#"> Read More </a> </footer>
+      </div>
+
+      <div class = "spotlight"> 
+        <h3> <a href = "#"> Spotlight: Amanda Brill of California </a> </h3>
+        <p> Amanda Brill is a Designer at Anchour. Fueled by the purpose of helping others, she works to bring the identity of a brand to life through a creative and intensive design process. Her goal is to use design as a way to help brands effectively communicate who they sponsor and supporter Fueled by the purpose of.. </p>
+        <footer> <a href = "#"> Read More </a> </footer>
+      </div>
+
+      <div class = "spotlight"> 
+        <h3> <a href = "#"> Varney Agency: Protecting What You </a> </h3>
+        <p> Anchour produced Varney Agencys latest spot featuring Matt Albrecht, owner of River Drive. Working with companies from all around the world, River Drive buys, sells, reconditions and recycles reconditions and ecycles owner of used. River Drive buys, sells Varney Agencys latest spot featuring Matt Albrecht.</p>
+        <footer> <a href = "#"> Read More </a> </footer>
+      </div>
+
+      <div class = "spotlight"> 
+        <h3> <a href = "#">Announcing support of Not Here </a> </h3>
+        <p> This week is Human Trafficking Awareness Week, so it’s great timing to share how proud we are to be a sponsor and supporter of Not Here latest spot featuring Matt Albrecht, reconditions and recycles owner of River Drive. Working with companies from all around the,a River Drive buys, sells.... </p>
+        <footer> <a href = "#"> Read More </a> </footer>
+      </div>
+    </div>
+
+    <div class = "start">
+      <h2 id = "startWork"> Want to work with us? </h2>
+      <button type="button" class="btn btn-default btn-lg"> Get Started &#x2192; </button>
+    </div>
+
+    <div id = "end">
+      <footer>
+        <a href = "#/home"> Home </a>
+        <a href = "#"> About us </a>
+        <a href = "#"> Our Team </a>
+        <a href = "#"> Blog </a>
+        <a href = "#"> Services </a>
+        <a href = "#"> Portfolio </a>
+        <a href = "#"> Contact </a>
+        <a href = "#"> Sitemap </a>
+    </footer>
+
+    </div>
+  </div>

@@ -1,0 +1,16 @@
+1) Dont use properties in controller - use objects
+2) Use Yeomen instead of angular-seed for structure
+3) Use this because then you can use controller as syntax
+4) Use ng-bind instead of ng-cloak if you used {{interpolation}} and you see a flash. You will need to do this only for the first page (e.g. index.html). In all other pages you can just use {{expressions}}.
+5) Use an array when you are injecting services or anything into a function. It basically acts like $.inject. So when you minify your code it will still work. 
+7) Think about if you can change the data you were using in your app to ng-model
+8) Named function for your controller instead of anonymous.
+9) Wrap it in an IIFE. No need to do var app = angular.module anymore because angular.module will be declared in your closure.
+10) Use strict 
+11) Use controller as in your js as a variable with templateUrl maybe. I think we dont have to use it in the html.
+12) Dont return as soon as you create a service. you can get lost in it if your service is big. Create a variable inside your service and attach properties or methods to the variable
+13) If you are seeing a flash when you load data from a server then use resolve. It will resolve the service call and only then will it render the controller.
+14) You might want to use {{::activity}}. This is for one way data binding. Every one of these will go into a watch function so by putting colon you can increase the performance. In case you dont want it to keep watching activity. 
+15) No logic in controllers
+16) Use the angular version of everything. $document instead of document
+17) Use common folder for things (directives) you will be using in several places across applications

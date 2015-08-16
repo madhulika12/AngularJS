@@ -1,0 +1,182 @@
+body 
+	margin: $zero
+	padding: $zero
+
+.firstView
+	background: url("https://foodpeopleloveandstuff.files.wordpress.com/2013/10/black-rose.jpg")
+	background-size: cover
+	//opacity: 0.5
+	height: $first-frag-height
+	width: $full-width
+
+.logo 
+	position: absolute
+	cursor: pointer
+	background-image: url("../../images/logo.png")
+	background-size: cover
+	height: $logo-height
+	width: $logo-width
+	margin: $logo-margin
+
+.firstView 
+	cite 
+		position: absolute
+		margin: $cite-margin
+		font-size: $fifty-font-size
+		font-family: $cite-font
+		letter-spacing: $cite-five
+		font-style: normal //cite has italic font by default
+		color: $anchor-white
+		font-weight: normal
+
+.firstView
+	h2
+		position: absolute
+		margin: $h2-margin
+		cursor: $arrow-cursor
+
+.firstView
+	h2
+		a 
+			text-decoration: none
+			color: $anchor-white
+
+.firstView
+	h2
+		a:hover
+			color: $anchor-lightblue
+
+.firstView
+	h2
+		a:hover::after
+			content: "\2192" //variable does not work for this
+
+aside 
+	position: $aside-absolute
+	margin: $aside-margin	
+	font-size: $aside-font-thirty
+	color: $anchor-white
+	cursor: $arrow-cursor
+
+#positionVideo
+	position: absolute
+	background-color: #202020
+	height: 76%
+	width: 100%
+	margin-top: 6.7%
+
+#playVideo
+	display: block
+	margin: 6% auto
+
+.navButton
+	float: $video-right
+	background-color: $video-background-color
+	color: $anchor-white
+	border-color: $video-background-color //we want the border to be black
+	margin: 1%
+
+#buttonDisplayContent 
+	background-color: #1A1C1C
+	width: $full-width
+	margin-top: 7%
+	text-align: $start-text-align
+	position: $aside-absolute
+
+#closeButton, #closeVideo
+	font-size: 40px
+	background-color: #898989
+	padding: 0.2% 1.1% 
+	opacity: 1
+	border-radius: $cite-five
+	margin: $video-one-percent
+
+#closeButton, #closeVideo
+	span
+		color: black
+
+#closeButton, #closeVideo:hover
+	background-color: #D6D5D5
+
+#buttonDisplayContent
+	ul
+		list-style-type: $text-decoration-none
+		padding: $zero
+
+#buttonDisplayContent
+	ul
+		ul 
+			list-style-type: $text-decoration-none
+			padding: $zero
+
+#buttonDisplayContent
+	ul
+		a 
+			text-decoration: $text-decoration-none
+			color: $anchor-white
+			font-weight: bold
+
+.normal, .subLi
+	text-decoration: $text-decoration-none
+	color: lightgray
+	font-size: 50px
+	font-weight: bold
+
+#buttonDisplayContent
+	li
+		margin-bottom: 0.1%
+
+#buttonDisplayContent 
+	.nested 
+		li
+			a 
+				color: #B2B2B2
+
+#buttonDisplayContent 
+	.nested 
+		li:hover 
+			a 
+    				color: #E3E1E1
+
+
+.subLi
+		margin: $zero
+		padding: $zero
+		list-style-type: $text-decoration-none
+
+.nested
+	margin-left: $zero
+	display: inline
+
+.nested
+	li
+		font-size: 30px
+		display: inline-block
+		padding-right: $video-one-percent
+		padding-left: $video-one-percent
+
+span 
+	.nested
+		li
+			display:inline-block
+			vertical-align:middle
+
+.normal:hover
+	background-color: black
+
+.subLi:hover
+	background-color: black
+
+#arrow
+	position: $aside-absolute
+	margin: $arrow-margin
+	cursor: $arrow-cursor
+
+.cssFade
+    transition: 0.2s linear all
+    opacity: 1
+
+.cssFade.ng-hide
+    opacity: 0
+
+

@@ -1,0 +1,43 @@
+<div>
+	<ul>
+		<li ng-repeat = "data in buttonNav.navData" ng-if = "($index == 0)">
+			<a href = "#"> {{data.name}} </a>
+		</li>
+
+		<li ng-repeat = "data in buttonNav.navData" ng-if = "($index == 1)">
+			<a href = "#"> {{data.name}} </a>
+
+			<span ng-repeat = "data in buttonNav.navData">
+				<a href = "#"> {{data.subLi.li1}} </a>
+			</span>
+
+			<span ng-repeat = "data in buttonNav.navData">
+				<a href = "#"> {{data.subLi.li2}} </a>
+			</span>
+		</li>
+
+		<li ng-repeat = "data in buttonNav.navData" ng-if = "($index == 2)">
+			<a href = "#"> {{data.name}} </a>
+		</li>
+
+
+		<li ng-repeat = "data in buttonNav.navData" ng-if = "($index == 3)">
+			<a href = "#"> {{data.name}} </a>
+
+			<span ng-repeat = "data in buttonNav.navData">
+				<a href = "#"> {{data.subLi.li3}} </a>
+				<a href = "#"> {{data.subLi.li4}} </a>
+				<a href = "#"> {{data.subLi.li5}} </a>
+				<a href = "#"> {{data.subLi.li6}} </a>
+			</span>
+		</li>
+
+		<li ng-repeat = "data in buttonNav.navData" ng-if = "($index == 4)">
+			<a href = "#"> {{data.name}} </a>
+		</li>
+
+		<li ng-repeat = "data in buttonNav.navData" ng-if = "($index == 5)">
+			<a href = "#"> {{data.name}} </a>
+		</li>
+	</ul>
+</div>
